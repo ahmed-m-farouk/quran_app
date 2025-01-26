@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quran/core/Strings/strings_app.dart';
 import 'package:quran/features/future_sepah/cubit/sepah_cubit.dart';
+import 'package:quran/features/future_sepah/viwe/widget/Row_Images/row_background_image.dart';
 import 'package:quran/features/future_sepah/viwe/widget/widget_drawer.dart';
 
 class BulidDrawer extends StatelessWidget {
@@ -52,6 +53,13 @@ class BulidDrawer extends StatelessWidget {
                 cupti.changetext4();
                 cupti.resetcountcupit();
               }),
+          Spacer(),
+          RowBackgroundImage(
+            cupit: cupti,
+          ),
+          SizedBox(
+            height: 30,
+          ),
         ],
       ),
     );

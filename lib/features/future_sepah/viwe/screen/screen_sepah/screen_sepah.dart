@@ -4,7 +4,6 @@ import 'package:quran/core/Colors/Textstyle/text_style.dart';
 
 import 'package:quran/features/future_sepah/cubit/sepah_cubit.dart';
 import 'package:quran/features/future_sepah/viwe/screen/bulid_drawer/bulid_drawer.dart';
-import 'package:quran/features/future_sepah/viwe/widget/Row_Images/row_background_image.dart';
 
 class ScreenSepah extends StatelessWidget {
   const ScreenSepah({super.key});
@@ -72,12 +71,6 @@ class ScreenSepah extends StatelessWidget {
                                     child: Text(cupit.count.toString(),
                                         style: textStyleapp()
                                             .copyWith(fontSize: 70)))),
-                          ),
-                          SizedBox(
-                            height: 30,
-                          ),
-                          RowBackgroundImage(
-                            cupit: cupit,
                           ),
                         ],
                       ),

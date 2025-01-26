@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quran/features/future_profile/view/screen_test.dart';
 
 class HomeImage extends StatelessWidget {
   const HomeImage({super.key});
@@ -6,6 +7,10 @@ class HomeImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
+      drawer: Drawer(
+        child: ProfileScreen(),
+      ),
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(

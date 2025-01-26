@@ -179,14 +179,31 @@ class _QuranPageViewState extends State<HomeQuran> {
                 );
               },
             ),
-            floatingActionButton: FloatingActionButton(
-              onPressed: () {
-                setState(() {
-                  fontSize += 2;
-                });
-              },
-              child: const Icon(Icons.text_increase, color: Colors.white),
-              backgroundColor: Colors.teal,
+            floatingActionButton: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                FloatingActionButton(
+                  heroTag: '++',
+                  onPressed: () {
+                    setState(() {
+                      fontSize += 2;
+                    });
+                  },
+                  child: const Icon(Icons.text_increase, color: Colors.white),
+                  backgroundColor: Colors.teal,
+                ),
+                const SizedBox(width: 10), // مسافة بين الأزرار
+                FloatingActionButton(
+                  heroTag: '--',
+                  onPressed: () {
+                    setState(() {
+                      fontSize -= 2;
+                    });
+                  },
+                  child: const Icon(Icons.text_decrease, color: Colors.white),
+                  backgroundColor: Colors.teal,
+                ),
+              ],
             ),
           ),
         );

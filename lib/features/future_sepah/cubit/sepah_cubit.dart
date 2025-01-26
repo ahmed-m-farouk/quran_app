@@ -12,8 +12,8 @@ class SepahCubit extends Cubit<SepahState> {
   SepahCubit() : super(SepahInitial());
 
   int count = 0;
-  String image = Images.image7;
-  Color color = Colorss.clorolightGreenAccent!;
+  String image = Images.image9;
+  Color color = Colorss.cloroblue;
 
   String text = StringApp.name1;
   plusecountcupit() {
@@ -29,8 +29,8 @@ class SepahCubit extends Cubit<SepahState> {
   }
 
   changeImage1() {
-    image = Images.image7;
-    color = Colorss.clorolightGreenAccent!;
+    image = Images.image9;
+    color = Colorss.cloroblue;
     emit(SepahChangeImage());
   }
 
@@ -41,8 +41,8 @@ class SepahCubit extends Cubit<SepahState> {
   }
 
   changeImage3() {
-    color = Colorss.cloroblue;
-    image = Images.image9;
+    color = Colorss.clorolightGreenAccent!;
+    image = Images.image7;
     emit(SepahChangeImage());
   }
 

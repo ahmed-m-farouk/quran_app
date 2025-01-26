@@ -131,19 +131,11 @@ class AyahScreen extends StatelessWidget {
                                     ),
                                     const Spacer(),
                                     const Icon(
-                                      Icons.arrow_back_ios,
+                                      Icons.arrow_forward_ios,
                                       color: Color(0xFF1E4D2B),
                                       size: 18,
                                     ),
                                   ],
-                                ),
-                                const SizedBox(height: 4),
-                                Text(
-                                  '${homeList[index].ayat} آية',
-                                  style: const TextStyle(
-                                    fontSize: 14,
-                                    color: Color(0xFF1E4D2B),
-                                  ),
                                 ),
                               ],
                             ),
